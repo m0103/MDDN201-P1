@@ -1,5 +1,5 @@
 *{
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	/* This makes the widths of elements more consistent
 		Full details here https://css-tricks.com/box-sizing/ */
 }
@@ -7,43 +7,75 @@
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: sans-serif;
+	background-color: #D2BEB9
 }
 
 section{
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+section h3 {
+
+}
+
+section p {
+	margin: 0px;
+}
+
+section .post {
+	background-color: #A2777F;
+	color: #D2BEB9;
+	padding: 10px;
 }
 
 header{
-	background-color: darkOrange;
-	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	width: 100%;
+	background-color: #631824;
+	color: #D2BEB9;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
 }
 
-nav{
+header nav{
+	color: #D2BEB9;
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
 }
 
-nav a, nav h3{
+header nav a,
+header nav h3,
+header nav span{
+	color: #D2BEB9;
 	float: left;
 	margin: 0px;
 	line-height: 60px;
-	margin-left: 1em;
+	margin-left: 0px;
 	margin-right: 1em;
 	text-decoration: none;
 }
 
-nav a:hover{
-	text-decoration: underline; /* Hover styles to let people know they can click it */
+nav a:hover {
+	color: #ccc;
+	text-decoration: none;
 }
 
+main {
+	margin: 0px;
+	padding: 0px;
+}
 
+#empty-space {
+ margin: 0px;
+ padding: 0px;
+ width: 100%;
+ height: 200px;
+}
 
 /* Simple grid */
 .g-row{
@@ -56,8 +88,9 @@ nav a:hover{
 }
 
 .g-50{
-	width: 50%;
+	width: calc(50% - 20px);
 	float: left;
+	margin: 10px;
 }
 
 .g-30{
